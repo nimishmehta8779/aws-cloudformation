@@ -1,0 +1,24 @@
+Tools Account - ( Account A )
+Dev Account - (Account B )
+
+First Step
+
+Tools Account ( Account A) 
+- CodePipeline creation
+- Create a New CMK
+- S3 Bucket for Artifacts
+- S3 Bucket policy that allows to communicate with Dev account (Account B)
+
+Third step
+
+- Tools account pipeline role to assume cross account role in Dev account
+
+
+Second Step
+
+Dev Account ( Account B )
+- Create a service account that does following things
+    - Cross Account Service Role to allow Cloud Formation
+    - Access to the S3 bucket in Tools Account
+    - Allow decryption using CMK in Tools Account
+
