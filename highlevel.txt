@@ -22,3 +22,8 @@ Dev Account ( Account B )
     - Access to the S3 bucket in Tools Account
     - Allow decryption using CMK in Tools Account
 
+
+
+KMS: arn:aws:kms:us-east-1:398241434812:key/a2e2e287-853b-43a7-bdb1-55d2f2126383
+codebuild role: codebuild-toolsaccount-codepipeline-service-role
+codepipeline role: AWSCodePipelineServiceRole-us-east-1-toolsaccount-pipeline
